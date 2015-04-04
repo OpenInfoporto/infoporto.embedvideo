@@ -20,6 +20,8 @@ from plone.formwidget.contenttree import ObjPathSourceBinder
 
 from infoporto.embedvideo import MessageFactory as _
 
+from Acquisition import aq_parent
+
 
 class IEmbeddedVideo(form.Schema, IImageScaleTraversable):
     """
@@ -46,4 +48,6 @@ class View(grok.View):
 
     grok.name('view')
 
-    # Add view methods here
+    def getParent(self):
+        return aq_parent(self.context)
+
