@@ -1,0 +1,17 @@
+infoporto.embedvideo Installation
+---------------------------------
+
+To install infoporto.embedvideo using zc.buildout and the plone.recipe.zope2instance
+recipe to manage your project, you can do this:
+
+* Add ``infoporto.embedvideo`` to the list of eggs to install, e.g.:
+
+    [buildout]
+    ...
+    eggs =
+        ...
+        infoporto.embedvideo
+       
+* Re-run buildout, e.g. with:
+
+    $ ./bin/buildout
