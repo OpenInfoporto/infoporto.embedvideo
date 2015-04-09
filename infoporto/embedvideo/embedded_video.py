@@ -32,6 +32,12 @@ class IEmbeddedVideo(form.Schema, IImageScaleTraversable):
             title=_(u"Embedded Code"),
         )
 
+    full_text = RichText(
+            title=_(u"Long text"),
+            description=_(u"Extended text"),
+            required=False,
+        )
+
 
 class EmbeddedVideo(Item):
     grok.implements(IEmbeddedVideo)

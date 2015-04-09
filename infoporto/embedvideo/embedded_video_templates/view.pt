@@ -18,11 +18,14 @@
                 <h1 class="documentFirstHeading" tal:define="parent view/getParent" tal:content="parent/Title" />
                 <h3 tal:content="context/Title" />
             </div>
-            <div class="photobox_gallery">
+            <!--<div class="photobox_gallery">-->
+            <div class="">
 
                 <div class="embedded-video" tal:content="structure context/embedded_code" />
 
             </div>
+
+            <div class="long-text" tal:content="structure context/full_text" />
         </tal:main-macro>
     </div>
 </body>
