@@ -25,7 +25,7 @@
 
             </div>
 
-            <div class="long-text" tal:content="structure context/full_text" />
+            <div class="long-text" tal:content="structure context/full_text/output" />
         </tal:main-macro>
     </div>
 </body>
